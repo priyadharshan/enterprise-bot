@@ -28,7 +28,7 @@ export class Dashboard extends Component {
         <div className="grid">
               <div className="sidenav">
               <IconButton aria-label="menu" className="sidebar-icon">
-              <i class="material-icons">gps_fixed</i>
+              <i class="material-icons intent-list-icons">gps_fixed</i>
               </IconButton>
               <IconButton aria-label="menu" className="sidebar-icon">
               <i class="material-icons">account_tree</i>

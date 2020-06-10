@@ -45,15 +45,14 @@ export const IntentList = (props) => {
   return (
     <TableContainer component={Paper} className={classes.container}>
       <Table className={classes.table} aria-label="intent list">
-        <TableHead>
+        <TableHead className="tabel-header">
           <StyledTableRow>
-          <StyledTableCell colSpan={2}>
-          <i class="material-icons">format_list_bulleted</i>
-          <h4>INTENT LIST</h4>
-          <i class="material-icons intent-list-icons">search</i>
-          <i class="material-icons intent-list-icons">control_point</i>
-          <span>ADD NEW</span>
-          </StyledTableCell>
+          <TableCell colSpan={2} className="tabel-cell-header">
+          <i class="material-icons intent-list-icons">format_list_bulleted</i>
+          <span class="heading">INTENT LIST</span>
+          <i class="material-icons intent-list-icons float">search</i>
+          <i class="material-icons intent-list-icons float">control_point</i>
+          </TableCell>
           </StyledTableRow>
         </TableHead>
         <TableBody>
@@ -62,7 +61,7 @@ export const IntentList = (props) => {
               <StyledTableCell component="th" scope="row">
                 {row.name.slice(0,20)}
               </StyledTableCell>
-              <StyledTableCell>
+              <StyledTableCell  className="icon-intend-details">
                 <IconButton aria-label="select intend details" size="small" onClick={() => setOpen(!open)}>
                   <ChevronRightIcon />
                 </IconButton>
