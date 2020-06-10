@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Dashboard } from './dashboard'
+import { Login } from './features/login'
 import './App.css';
 
 export function App() {
@@ -10,8 +10,7 @@ export function App() {
         <header className="App-header">
         </header>
         <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route exact path="/:pageId" component={Dashboard} />
+          <Route exact path="/" component={Login} />
         </Switch>
       </div>
     </Router>
