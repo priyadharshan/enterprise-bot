@@ -3,9 +3,6 @@ import {
     GET_NEWS_REQUESTED,
     GET_NEWS_SUCCEEDED,
     GET_NEWS_ERROR,
-    UPVOTE,
-    HIDE_NEWS,
-    UPDATE_NEWS,
 } from './action-types'
 
 const BASE_URL = 'https://hn.algolia.com/api/v1/search?tags=story&page=';
@@ -81,29 +78,3 @@ export const fetchChat = () => (dispatch) => {
         .catch((error) => {
         })
 }
-
-export function hideNews(newsId) {
-    return function(dispatch, getState) {
-      dispatch({
-        type: HIDE_NEWS,
-        payload: newsId,
-      })
-      dispatch({
-        payload: getState(),
-        type: UPDATE_NEWS,
-      })
-    }
-  }
-
-export function upVote(newsId) {
-    return function(dispatch, getState) {
-      dispatch({
-        type: UPVOTE,
-        payload: newsId,
-      })
-      dispatch({
-        payload: getState(),
-        type: UPDATE_NEWS,
-      })
-    }
-  }

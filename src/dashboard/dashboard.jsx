@@ -12,7 +12,6 @@ export class Dashboard extends Component {
   }
 
   render() {
-
     return (
       <div>
         <Loader loading={true} />

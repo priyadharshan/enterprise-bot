@@ -1,1 +1,0 @@
-export { getHostname } from './get-host-name'
