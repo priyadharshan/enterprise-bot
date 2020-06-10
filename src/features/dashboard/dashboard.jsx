@@ -26,30 +26,26 @@ export class Dashboard extends Component {
       <div>
         {  isEmpty(intentList) ? <LinearLoader /> :
         <div className="grid">
-          <Grid container spacing={4} className="grid-background">
-            <Grid item xs={1}>
               <div className="sidenav">
               <IconButton aria-label="menu" className="sidebar-icon">
-              <i class="material-icons">important_devices</i>
+              <i class="material-icons">gps_fixed</i>
               </IconButton>
               <IconButton aria-label="menu" className="sidebar-icon">
-              <i class="material-icons">important_devices</i>
+              <i class="material-icons">account_tree</i>
               </IconButton>
               <IconButton aria-label="menu" className="sidebar-icon">
-              <i class="material-icons">important_devices</i>
+              <i class="material-icons">show_chart</i>
               </IconButton>
               <IconButton aria-label="menu" className="sidebar-icon">
-              <i class="material-icons">important_devices</i>
+              <i class="material-icons">settings</i>
               </IconButton>
               </div>
-            </Grid>
+          <Grid container spacing={2} className="grid-background">
+            
             <Grid item xs={3}>
               { !isEmpty(intentList) ? <IntentList intentList={intentList} /> : null }
             </Grid>
-            <Grid item xs={7}>
-              
-            </Grid>
-            <Grid item xs={1}>
+            <Grid item xs={9}>
               
             </Grid>
           </Grid>
