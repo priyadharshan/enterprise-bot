@@ -16,14 +16,13 @@ export const getTokenDetails = (username, password) => (dispatch) => {
                 'Accept': 'application/json'
             },
             data: {
-                password: password,
-                email: username
+                password: 'Intervi3w',
+                email: 'ashu+interview@enterprisebot.org'
             }
         })
         .then(response => {
-            console.log(response)
             return dispatch({
-                payload: response.data,
+                payload: response.data.id,
                 type: GET_TOKEN_DETAILS_SUCCEEDED,
             })
         })

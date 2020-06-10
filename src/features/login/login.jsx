@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -32,7 +34,8 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-export const Login = (props) => {
+const Login = (props) => {
+  console.log(props)
   const classes = useStyles();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -49,10 +52,11 @@ export const Login = (props) => {
   }, [username, password]);
 
   const handleLogin = () => {
-    if (username === 'ashu+interview@enterprisebot.org' && password === 'Intervi3w') {
+    if (username === '1' && password === '1') {
       setError(false);
-      setHelperText('Login Successfully');
+      setHelperText('Login Successfully')
       props.getTokenDetails(username, password)
+      props.history.push('/dashboard/')
     } else {
       setError(true);
       setHelperText('Incorrect username or password')
@@ -112,3 +116,5 @@ export const Login = (props) => {
     </React.Fragment>
   );
 }
+
+export default withRouter(Login)

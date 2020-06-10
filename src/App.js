@@ -8,11 +8,11 @@ import './App.css';
 export function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Header />
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/dashboard/" component={Dashboard} />
         </Switch>
       </div>
     </Router>

@@ -1,1 +1,3 @@
-export { Dashboard } from './dashboard'
+import Dashboard from './container'
+
+export { Dashboard }

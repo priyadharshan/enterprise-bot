@@ -1,0 +1,27 @@
+.grid {
+    flex-grow: 1;
+    background-color: #F2F2F2;
+    height: 100%;
+}
+
+.grid-background {
+    min-block-size: -webkit-fill-available;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    width: 70px;
+    z-index: 1;
+    left: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+    margin-left: 10px;
+}
+
+.sidebar-icon {
+    width: 50px;
+    height: 40px;
+    opacity: 1;
+    padding: 12px;
+}

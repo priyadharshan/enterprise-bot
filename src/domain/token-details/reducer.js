@@ -5,11 +5,10 @@ import {
 } from './action-types'
 
 export const initialState = {
-    model: [],
+    model: '',
     meta: {
         loading: false,
         error: null,
-        pageId: '',
     }
 };
 
@@ -27,7 +26,7 @@ export const reducer = (state = initialState, action) => {
         case GET_TOKEN_DETAILS_SUCCEEDED:
             return {
                 ...state,
-                model: action.payload.id,
+                model: action.payload,
                 meta: {
                     loading: false,
                     error: null,
@@ -37,7 +36,7 @@ export const reducer = (state = initialState, action) => {
         case GET_TOKEN_DETAILS_ERROR:
             return {
                 ...state,
-                model: {},
+                model: '',
                 meta: {
                     loading: false,
                     error: action.payload,
