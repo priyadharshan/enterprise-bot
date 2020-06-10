@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-export const Login = () => {
+export const Login = (props) => {
   const classes = useStyles();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -52,6 +52,7 @@ export const Login = () => {
     if (username === 'ashu+interview@enterprisebot.org' && password === 'Intervi3w') {
       setError(false);
       setHelperText('Login Successfully');
+      props.getTokenDetails(username, password)
     } else {
       setError(true);
       setHelperText('Incorrect username or password')
@@ -98,8 +99,8 @@ export const Login = () => {
           </CardContent>
           <CardActions>
             <Button
-              variant="outlined"
               size="large"
+              color="primary"
               className={classes.loginBtn}
               onClick={()=>handleLogin()}
               disabled={isButtonDisabled}>

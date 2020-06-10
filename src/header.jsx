@@ -8,10 +8,10 @@ import './header.css'
 
 export const Header = memo(() => {
     return (
-      <div className="root">
-        <AppBar position="static">
+      <div className="menu-header">
+        <AppBar position="static" className="header">
           <Toolbar>
-            <IconButton edge="start" aria-label="menu">
+            <IconButton edge="start" aria-label="menu" className="menu-icon">
               <MenuIcon />
             </IconButton>
             <a href="/" className="logo"></a>

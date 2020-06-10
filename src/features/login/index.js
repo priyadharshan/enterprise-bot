@@ -1,1 +1,3 @@
-export { Login } from './login'
+import Login from './container'
+
+export { Login }
