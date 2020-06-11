@@ -7,12 +7,12 @@ export const Triggers = memo(({ triggers }) => {
   return (
       <div className="reply-block">
       <div className="reply-container">
-      <i class="material-icons chat-icon">chat</i>
+      <i class="material-icons chat-icon">record_voice_over</i>
       <span className="reply-text">TRIGGERS</span>
       </div>
       <div className="reply-name">
               <div>
-              <i class="material-icons intent-list-icons">record_voice_over</i>
+              <i class="material-icons intent-list-icons">add</i>
                 
               <span className="add-replies">Add User Says here...</span>
               </div>
