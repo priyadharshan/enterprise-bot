@@ -1,8 +1,10 @@
 import React, { memo } from 'react';
-
+import { slice, isEmpty } from 'ramda'
+import './triggers.css'
 
 export const Triggers = memo(({ triggers }) => {
   console.log(triggers)
+  const canShowPagination = !isEmpty(triggers) && triggers.length > 5
 
   return (
       <div className="reply-block">
@@ -14,10 +16,10 @@ export const Triggers = memo(({ triggers }) => {
               <div>
               <i class="material-icons intent-list-icons">add</i>
                 
-              <span className="add-replies">Add User Says here...</span>
+              <span className="add-replies"><small>Add User Says here...</small></span>
               </div>
           </div>
-            {triggers.map((trigger) => (
+            {slice(0,5,triggers).map((trigger) => (
                 <div className="reply-name">
         <span className="replies">{trigger.displayValue}</span>
         <div class="display-name-icons">
@@ -26,6 +28,18 @@ export const Triggers = memo(({ triggers }) => {
         </div>
     </div>
               ))}
+
+              {
+                canShowPagination ? 
+
+                <div className="pagination">
+        <div class="pagination-icons">
+        <i class="material-icons delete-outline-icon page-icon">keyboard_arrow_left</i>
+        <span className="pagination-count">1 to 5 of {triggers.length}</span>
+          <i class="material-icons delete-outline-icon page-icon">keyboard_arrow_right</i>
+        </div>
+    </div> : null
+              }
 
               
     </div> 

@@ -3,7 +3,6 @@ import './text-reply.css'
 
 
 export const TextReply = memo(({ replies }) => {
-  console.log(replies)
 
   return (
       <div className="reply-block">
@@ -24,7 +23,7 @@ export const TextReply = memo(({ replies }) => {
               <div>
               <i class="material-icons intent-list-icons">add</i>
                 
-              <span className="add-replies">Add reply here</span>
+              <span className="add-replies"><small>Add reply here</small></span>
               </div>
           </div>
     </div> 

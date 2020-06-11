@@ -1,0 +1,21 @@
+.pagination {
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px #0000003D;
+    border-radius: 0px 0px 2px 2px;
+    opacity: 1;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    text-align: center;
+}
+
+.pagination-icons {
+    text-align: center;
+font: Regular 13px/16px Lato;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.page-icon {
+    vertical-align: bottom;
+}
