@@ -1,0 +1,84 @@
+.reply-block {
+    margin-top: 30px;
+    width: 850px;
+}
+
+.reply-text {
+    text-align: left;
+    font: Bold 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    vertical-align: super;
+    margin: 5px;
+}
+
+.reply-container {
+    text-align: initial;
+    margin-bottom: 10px;
+}
+
+.chat-icon {
+    color: #00A0AE;
+}
+
+.reply-name {
+    left: 514px;
+    width: 850px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px #0000003D;
+    border-radius: 0px 0px 2px 2px;
+    opacity: 1;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.add-replies {
+    text-align: left;
+    font: Regular 13px/16px Lato;
+    letter-spacing: 0px;
+    color: #00A0AE;
+    opacity: 1;
+    vertical-align: super;
+}
+
+.replies {
+    vertical-align: middle;
+    margin: 5px;
+    text-align: left;
+    font: Regular 13px/16px Lato;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.name {
+    vertical-align: middle;
+
+}
+
+.display-name-icons {
+    float: right;
+    margin: 5px;
+}
+
+.save-text {
+    width: 37px;
+    height: 15px;
+    text-align: left;
+    font: Bold 12px/20px Lato;
+    letter-spacing: 0px;
+    color: #00A0AE;
+    opacity: 1;
+    vertical-align: top;
+}
+
+.delete-outline-icon {
+    color: grey;
+    margin-left: 10px;
+
+}
+
+.save-icon {
+    color: #00A0AE;
+}

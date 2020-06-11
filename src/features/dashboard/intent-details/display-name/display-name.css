@@ -1,0 +1,52 @@
+.display-name {
+    top: 50px;
+    left: 514px;
+    width: 850px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px #0000003D;
+    border-radius: 0px 0px 2px 2px;
+    opacity: 1;
+}
+
+.name {
+    vertical-align: middle;
+    border-bottom: 3px solid #00A0AE;
+    margin: 5px;
+    text-align: left;
+    font: Bold 16px/19px Lato;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.name {
+    vertical-align: middle;
+
+}
+
+.display-name-icons {
+    float: right;
+    margin: 5px;
+}
+
+.save-text {
+    width: 37px;
+    height: 15px;
+    text-align: left;
+    font: Bold 12px/20px Lato;
+    letter-spacing: 0px;
+    color: #00A0AE;
+    opacity: 1;
+    vertical-align: top;
+}
+
+.delete-outline-icon {
+    color: grey;
+    margin-left: 10px;
+
+}
+
+.save-icon {
+    color: #00A0AE;
+}

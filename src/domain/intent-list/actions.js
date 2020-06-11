@@ -7,8 +7,6 @@ import {
 
 export const getIntentList = () => (dispatch, getState) => {
     dispatch({ type: GET_INTENT_LIST_REQUESTED })
-
-    console.log(getState())
     const authTokenDetails = getState().tokenDetails.model
 
     return axios({

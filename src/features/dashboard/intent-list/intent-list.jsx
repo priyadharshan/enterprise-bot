@@ -40,7 +40,6 @@ const StyledTableRow = withStyles((theme) => ({
 
 export const IntentList = (props) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
 
   return (
     <TableContainer component={Paper} className={classes.container}>
@@ -62,7 +61,7 @@ export const IntentList = (props) => {
                 {row.name.slice(0,20)}
               </StyledTableCell>
               <StyledTableCell  className="icon-intend-details">
-                <IconButton aria-label="select intend details" size="small" onClick={() => setOpen(!open)}>
+                <IconButton aria-label="select intend details" size="small" onClick={() => props.getIntentDetails(row.id)}>
                   <ChevronRightIcon />
                 </IconButton>
         </StyledTableCell>

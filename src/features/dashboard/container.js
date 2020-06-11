@@ -1,15 +1,18 @@
-import { connect } from 'react-redux';
-import { actions } from '../../domain/intent-list';
-import { Dashboard } from './dashboard';
+import { connect } from 'react-redux'
+import { getIntentDetails } from '../../domain/intent-details/actions'
+import { getIntentList } from '../../domain/intent-list/actions'
+import { Dashboard } from './dashboard'
 
 const mapStateToProps = state => ({
   intentList: state.intentList.model,
-  loading: state.intentList.meta.loading,
-  tokenDetails: state.tokenDetails.model
+  tokenDetails: state.tokenDetails.model,
+  intentDetails: state.intentDetails.model,
+  loading: state.intentDetails.meta.loading,
 });
 
 const mapDispatchToProps = dispatch => ({
-  getIntentList: () => dispatch(actions.getIntentList()),
+  getIntentList: () => dispatch(getIntentList()),
+  getIntentDetails: (intentId) => dispatch(getIntentDetails(intentId)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
