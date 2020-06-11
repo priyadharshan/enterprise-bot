@@ -1,0 +1,19 @@
+.picture {
+    text-align: center;
+}
+
+.add-photo {
+    margin-top: 50px;
+    margin-left: 25px;
+    display: block;
+}
+
+.addphoto {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: block;
+}
+
+.upload-text{
+    margin-left: 20px;
+}
